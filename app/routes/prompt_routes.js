@@ -55,19 +55,19 @@ router.get('/prompts/:id', (req, res, next) => {
     .catch(next)
 })
 
-router.get('/my-prompts', requireToken, (req, res, next) => {
-  Prompt.find()
-    .then(prompts => {
-      // `prompts` will be an array of Mongoose documents
-      // we want to convert each one to a POJO, so we use `.map` to
-      // apply `.toObject` to each one
-      return prompts.map(prompt => prompt.toObject())
-    })
-    // respond with status 200 and JSON of the prompts
-    .then(prompts => res.status(200).json({ prompts: prompts }))
-    // if an error occurs, pass it to the handler
-    .catch(next)
-})
+// router.get('/my-prompts', requireToken, (req, res, next) => {
+//   Prompt.find()
+//     .then(prompts => {
+//       // `prompts` will be an array of Mongoose documents
+//       // we want to convert each one to a POJO, so we use `.map` to
+//       // apply `.toObject` to each one
+//       return prompts.map(prompt => prompt.toObject())
+//     })
+//     // respond with status 200 and JSON of the prompts
+//     .then(prompts => res.status(200).json({ prompts: prompts }))
+//     // if an error occurs, pass it to the handler
+//     .catch(next)
+// })
 
 // CREATE
 // POST /prompts
