@@ -91,6 +91,6 @@ In future iterations, I would...
 
 ![writer.ly](https://i.imgur.com/Y4Wk9ze.png)
 
-#### Wireframes:
 
 #### ERD:
+![ERD](https://i.imgur.com/KOpBse6.jpg?2)
