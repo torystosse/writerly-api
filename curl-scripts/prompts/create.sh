@@ -10,7 +10,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "prompt": {
-      "text": "'"${TEXT}"'"
+      "text": "'"${TEXT}"'",
+      "genre": "'"${GENRE}"'"
     }
   }'
 
