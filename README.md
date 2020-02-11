@@ -93,4 +93,4 @@ In future iterations, I would...
 
 
 #### ERD:
-![ERD](https://i.imgur.com/KOpBse6.jpg?2)
+![ERD](https://i.imgur.com/kj67daY.jpg?1)
